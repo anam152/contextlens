@@ -14,9 +14,9 @@
 
 
 ## Application Preview
-(https://github.com/anam152/contextlens/blob/4002f9bf4dd2673b7150a04026f11ba8b58644bc/screenshots/s1.png)
 ![](screenshots/s1.png)
-
+![](screenshots/s2.png)
+![](screenshots/s3.png)
 
 **ContextLens** is a context-aware machine-learning explorer for tabular CSV data.  
 It profiles a dataset, explains its modelling context, flags common data risks,

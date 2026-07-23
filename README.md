@@ -1,5 +1,21 @@
 # ContextLens 🔎
 
+## Live Application
+
+[Launch ContextLens](https://contextlens-ana.streamlit.app/)
+
+## Built With
+
+- Python
+- Streamlit
+- Pandas
+- NumPy
+- Scikit-learn
+
+
+## Application Preview
+
+
 **ContextLens** is a context-aware machine-learning explorer for tabular CSV data.  
 It profiles a dataset, explains its modelling context, flags common data risks,
 trains reproducible baseline pipelines, compares appropriate metrics, and exports

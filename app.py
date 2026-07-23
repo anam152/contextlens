@@ -3,8 +3,6 @@ from analysis import analyse_dataset, build_context_narrative, infer_task_type
 from modeling import available_models, train_and_compare_models
 from reporting import build_markdown_report
 
-
-
 import hashlib
 from io import BytesIO
 from pathlib import Path
@@ -12,18 +10,17 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
-from contextlens.analysis import (
+from analysis import (
     analyse_dataset,
     build_context_narrative,
     infer_task_type,
 )
-from contextlens.modeling import (
+
+from modeling import (
     available_models,
     train_and_compare_models,
 )
-from contextlens.reporting import build_markdown_report
-
-
+from reporting import build_markdown_report
 APP_DIR = Path(__file__).parent
 SAMPLE_PATH = APP_DIR / "sample_data" / "iris_contextlens.csv"
 

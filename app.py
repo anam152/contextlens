@@ -1,8 +1,9 @@
+from __future__ import annotations
 from analysis import analyse_dataset, build_context_narrative, infer_task_type
 from modeling import available_models, train_and_compare_models
 from reporting import build_markdown_report
 
-from __future__ import annotations
+
 
 import hashlib
 from io import BytesIO

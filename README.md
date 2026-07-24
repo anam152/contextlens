@@ -18,6 +18,9 @@
 ![](screenshots/s2.png)
 ![](screenshots/s3.png)
 
+## Test
+![Tests](https://github.com/anam152/contextlens/actions/workflows/tests.yml/badge.svg)
+
 **ContextLens** is a context-aware machine-learning explorer for tabular CSV data.  
 It profiles a dataset, explains its modelling context, flags common data risks,
 trains reproducible baseline pipelines, compares appropriate metrics, and exports

@@ -17,6 +17,7 @@
 ![](screenshots/s1.png)
 ![](screenshots/s2.png)
 ![](screenshots/s3.png)
+![](screenshots/s4.png)
 
 ## Test
 ![Tests](https://github.com/anam152/contextlens/actions/workflows/tests.yml/badge.svg)

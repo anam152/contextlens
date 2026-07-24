@@ -134,7 +134,8 @@ Current limitations include:
 - [ ] Genetic-algorithm feature selection
 - [ ] SHAP explanations
 - [ ] Saved experiment histories
-- [ ] Domain-context templates for healthcare and IoT datasets
+- [x] Domain-context template for healthcare datasets (Pima Indians Diabetes dtatset sample added)
+- [ ] Domain-context template for IoT datasets
 - [ ] Downloadable PDF report
 
 ## Responsible use

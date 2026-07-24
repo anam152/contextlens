@@ -65,7 +65,7 @@ def read_uploaded_csv(file_bytes: bytes) -> pd.DataFrame:
 
 
 @st.cache_data(show_spinner=False)
-def read_sample_csv() -> pd.DataFrame:
+def read_sample_csv(path: Path) -> pd.DataFrame:
     return pd.read_csv(path)
 
 

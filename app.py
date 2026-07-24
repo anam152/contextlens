@@ -24,7 +24,7 @@ from reporting import build_markdown_report
 APP_DIR = Path(__file__).parent
 SAMPLE_DATASETS = {
     "Iris (generic)": APP_DIR / "sample_data" / "iris_contextlens.csv",
-    "Heart Disease (healthcare)": APP_DIR / "sample_data" / "heart_disease.csv",
+    "Diabetes (healthcare)": APP_DIR / "sample_data" / "diabetes.csv",
 }
 
 
@@ -119,7 +119,7 @@ with st.sidebar:
         sample_choice = st.selectbox(
             "Sample dataset",
             options=list(SAMPLE_DATASETS.keys()),
-            help="Heart Disease demonstrates ContextLens on a healthcare classification task.",
+            help="Pima Indians Diabetes Dataset demonstrates ContextLens on a healthcare classification task.",
         )
         sample_path = SAMPLE_DATASETS[sample_choice]
         df = read_sample_csv(sample_path)

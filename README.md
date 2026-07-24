@@ -13,7 +13,11 @@
 - Scikit-learn
 
 ## Video Demonstration
-![](screenshots/Contextlens.mp4)
+[![Watch the full ContextLens walkthrough](assets/contextlens-video-thumbnail.png)](https://youtu.be/sBrD-JEiVYM)
+
+<p align="center">
+  <em>Click the thumbnail to watch the complete demonstration.</em>
+</p>
 ## Application Preview
 ![](screenshots/s1.png)
 ![](screenshots/s2.png)

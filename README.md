@@ -12,7 +12,8 @@
 - NumPy
 - Scikit-learn
 
-
+## Video Demonstration
+![]
 ## Application Preview
 ![](screenshots/s1.png)
 ![](screenshots/s2.png)

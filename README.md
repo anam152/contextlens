@@ -13,7 +13,7 @@
 - Scikit-learn
 
 ## Video Demonstration
-![]
+![](screenshots/Contextlens.mp4)
 ## Application Preview
 ![](screenshots/s1.png)
 ![](screenshots/s2.png)

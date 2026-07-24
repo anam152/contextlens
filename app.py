@@ -22,7 +22,10 @@ from modeling import (
 )
 from reporting import build_markdown_report
 APP_DIR = Path(__file__).parent
-SAMPLE_PATH = APP_DIR / "sample_data" / "iris_contextlens.csv"
+SAMPLE_DATASETS = {
+    "Iris (generic)": APP_DIR / "sample_data" / "iris_contextlens.csv",
+    "Heart Disease (healthcare)": APP_DIR / "sample_data" / "heart_disease.csv",
+}
 
 
 st.set_page_config(
@@ -63,7 +66,7 @@ def read_uploaded_csv(file_bytes: bytes) -> pd.DataFrame:
 
 @st.cache_data(show_spinner=False)
 def read_sample_csv() -> pd.DataFrame:
-    return pd.read_csv(SAMPLE_PATH)
+    return pd.read_csv(path)
 
 
 def show_issue_cards(issues: list[dict]) -> None:
@@ -113,8 +116,15 @@ with st.sidebar:
             st.error(f"Could not read the CSV: {exc}")
             st.stop()
     else:
-        df = read_sample_csv()
-        source_name = SAMPLE_PATH.name
+        sample_choice = st.selectbox(
+            "Sample dataset",
+            options=list(SAMPLE_DATASETS.keys()),
+            help="Heart Disease demonstrates ContextLens on a healthcare classification task.",
+        )
+        sample_path = SAMPLE_DATASETS[sample_choice]
+        df = read_sample_csv(sample_path)
+        source_name = sample_path.name
+        
 
     if df.empty:
         st.error("The dataset has no rows.")
@@ -122,9 +132,11 @@ with st.sidebar:
 
     default_target = (
         "species"
-        if source == "Use sample dataset" and "species" in df.columns
+        if "species" in df.columns
+        else "target" if "target" in df.columns
         else df.columns[-1]
     )
+    
     target = st.selectbox(
         "Target column",
         options=list(df.columns),

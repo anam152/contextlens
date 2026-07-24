@@ -68,7 +68,7 @@ and categorical encoding.
 ## Run locally
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/contextlens.git
+git clone https://github.com/anam152/contextlens.git
 cd contextlens
 
 python -m venv .venv
